@@ -1,32 +1,91 @@
-# React + TypeScript + Vite
+# TaskFlow — Task Management App
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A modern and responsive task management application built with **React, TypeScript, Redux Toolkit, and Tailwind CSS**. TaskFlow helps users organize their tasks, track progress, manage priorities, and keep their task data persisted across page refreshes.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Task Management** — Create, edit, and delete tasks.
+- **Task Status Tracking** — Organize tasks into To Do, In Progress, and Done.
+- **Priority Management** — Assign Low, Medium, or High priority to tasks.
+- **Search & Filtering** — Find tasks and filter them based on relevant criteria.
+- **Dashboard Overview** — View task counts and completion progress at a glance.
+- **Persistent State** — Preserve task data across page refreshes using Redux Persist.
+- **Responsive UI** — Clean interface designed with Tailwind CSS.
+- **Client-Side Routing** — Navigate between application pages using React Router.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| Technology | Purpose |
+|---|---|
+| React | Building the user interface |
+| TypeScript | Type safety and maintainable code |
+| Redux Toolkit | Centralized state management |
+| Redux Persist | Persisting application state |
+| React Router | Client-side navigation |
+| Tailwind CSS | Responsive styling |
+| Vite | Development server and build tooling |
 
-## Expanding the Oxlint configuration
+## 🚀 Getting Started
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+### Prerequisites
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+Make sure you have installed:
+
+- [Node.js](https://nodejs.org/)
+- npm (included with Node.js)
+- Git
+
+### Installation
+
+**1. Clone the repository**
+
+```bash
+git clone https://github.com/MirzaQasimRaza/taskflow-task-management
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+**2. Navigate to the project directory**
+
+```bash
+cd taskflow-task-management
+```
+
+**3. Install dependencies**
+
+```bash
+npm install
+```
+
+**4. Start the development server**
+
+```bash
+npm run dev
+```
+
+Open the local URL displayed in your terminal to use TaskFlow.
+
+## 📂 Project Goals
+
+TaskFlow is a hands-on project focused on strengthening my understanding of:
+
+- Component-based development with React
+- Type-safe application development with TypeScript
+- Global state management with Redux Toolkit
+- State persistence and rehydration with Redux Persist
+- Routing and reusable UI components
+- Building responsive interfaces with Tailwind CSS
+
+## 🔮 Future Improvements
+
+- Integrate a backend API and database
+- Add user authentication and authorization
+- Implement task sorting and advanced filtering
+- Add due-date reminders and overdue indicators
+- Improve automated testing and error handling
+
+## 👨‍💻 Author
+
+Developed as a learning project to practice modern frontend development and build toward full-stack development.
+
+---
+
+If you find this project useful, feel free to explore the code and share feedback.
